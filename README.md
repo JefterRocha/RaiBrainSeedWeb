@@ -1,5 +1,5 @@
 # Rai Brain Seed Web
-A brain seed web to RaiBlocks. This project is based in algorith algorithm in Python by [MarcosMMB](https://github.com/marcosmmb/RaiBrainSeed)
+A brain seed web to RaiBlocks. This project is based in a algorithm in Python by [MarcosMMB](https://github.com/marcosmmb/RaiBrainSeed)
 
 ----
 
