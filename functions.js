@@ -72,22 +72,25 @@ document.querySelector(".btn").onclick = () =>
 
         if(phrase.value == "")
             {
-                warning.textContent = "Insert a phrase first";
-                warning.style.color = "red";
+				warning.classList.remove("alert-success");
+				warning.classList.add("alert-danger");
+				warning.textContent = "Insert a phrase first";
                 seedField.textContent = "";
             }
 
         else if(MainFlow(phrase.value) !== false)
             {
-                warning.textContent = "Your seed";
-				warning.style.color = "green";
-				seedField.style.color = "green";
+				warning.classList.remove("alert-success");
+				warning.classList.remove("alert-danger");
+				warning.classList.add("alert-success");
+				warning.textContent = "Your seed";
+				seedField.style.color = "#3c763d";
                 seedField.textContent = MainFlow(phrase.value);
             }
         else
             {
-                warning.textContent = "Your phrase has an invalid character";
-                warning.style.color = "red";
+				warning.classList.add("alert-danger");
+				warning.textContent = "Your phrase has an invalid character";
                 seedField.textContent = "";
             }
     }
