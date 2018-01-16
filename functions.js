@@ -67,7 +67,7 @@ function MainFlow(s)
 document.querySelector(".btn").onclick = () =>
     {
         phrase = document.querySelector(".phrase");
-        warning = document.querySelector(".tip");
+        warning = document.querySelector(".warning");
         seedField = document.querySelector(".seed");
 
         if(phrase.value == "")
