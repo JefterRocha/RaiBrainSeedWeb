@@ -7,4 +7,5 @@ A brain seed web to RaiBlocks. This project is based in a algorithm in Python de
 
 **How to use**
 
- 1. Just download this repository [here](https://codeload.github.com/JefterRocha/RaiBrainSeedWeb/zip/master), unzip and open the index.html file
+1. Acess this adress [jefterrocha.github.io/RaiBrainSeedWeb](https://jefterrocha.github.io/RaiBrainSeedWeb/) 
+2. Just download this repository [here](https://codeload.github.com/JefterRocha/RaiBrainSeedWeb/zip/master), unzip and open the index.html file
