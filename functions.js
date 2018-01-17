@@ -1,8 +1,8 @@
-ASCIICHARS = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ ';
+const ASCIICHARS = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ ';
 
-function AsciiParser(string)
+const AsciiParser = (string) =>
 	{
-		for(var c = 0; c < string.length; c++)
+		for(let c in string)
 			{
 				if(ASCIICHARS.indexOf(string[c]) == -1)
 					{
@@ -11,30 +11,30 @@ function AsciiParser(string)
 			}
 		return true;
 	}
-function AsciiList(string)
+const AsciiList = (string) =>
 	{
 		s = string.replace(/\s/g, "");
 		l = Array.from(new Set(s));
 		l.sort();
 		return l;
 	}
-function MakeHexDic(l)
+const MakeHexDic = (l) =>
 	{
 		d = {};
-		for(let i = 0; i < l.length; i++)
+		for(let i in l)
 			{
 				//d[l[i]] = i[2].charCodeAt(i).toString(16).toUpperCase();
 				d[l[i]] = (i%16).toString(16).toUpperCase();
 			}
 		return d;
 	}
-//Pronto
-function MakeSeed(s, d)
+
+const MakeSeed = (s, d) =>
 	{
 		s = s.replace(/\s/g, "");
 		l = Array.from(s);
 		seed = [];
-		for(var c = 0; c < l.length; c++)
+		for(let c in l)
 			{
 				//seed.push(Object.keys(d)[c]);
 				seed.push(d[l[c]]);
@@ -49,9 +49,9 @@ function MakeSeed(s, d)
 				seed += seed;
 			}
 		return seed.slice(0,64);
-	}//Pronto
+	}
 
-function MainFlow(s)
+const MainFlow = (s) =>
 	{
 		if (!AsciiParser(s))
 			{
