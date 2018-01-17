@@ -50,11 +50,18 @@ body
 		font: inherit;
 	}
 
-.btn.focus, .btn:focus, .btn:hover 
+.btn:hover 
 	{
 		color: #333;
 		text-decoration: none;
-		background-color: #a3a3a3;
+		background-color: #e6e6e6;
+		border-color: #8c8c8c;
+	}
+.btn:active
+	{
+		color: #333;
+		text-decoration: none;
+		background-color: #ffffff;
 		border-color: #8c8c8c;
 	}
 
