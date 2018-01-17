@@ -46,6 +46,7 @@ body
 		border: 1px solid transparent;
 		border-radius: 4px;
 		border-color: #CCC;
+		outline: none;
 		font: inherit;
 	}
 
@@ -57,11 +58,11 @@ body
 		border-color: #8c8c8c;
 	}
 	
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
+/*.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
 	{
 		outline: 5px auto -webkit-focus-ring-color;
 		outline-offset: -2px;
-	}
+	}*/
 
 .alert-info
 	{
