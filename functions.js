@@ -74,7 +74,7 @@ document.querySelector(".btn").onclick = () =>
             {
 				warning.classList.remove("alert-success");
 				warning.classList.add("alert-danger");
-				warning.textContent = "Insert a phrase first.";
+				warning.textContent = "Insert a phrase first!";
                 seedField.textContent = "";
             }
 
@@ -82,7 +82,7 @@ document.querySelector(".btn").onclick = () =>
             {
 				warning.classList.remove("alert-danger");
 				warning.classList.add("alert-success");
-				warning.textContent = "Your seed.";
+				warning.textContent = "Your seed!";
 				seedField.style.color = "#3c763d";
                 seedField.textContent = MainFlow(phrase.value);
             }
@@ -90,7 +90,7 @@ document.querySelector(".btn").onclick = () =>
             {
 				warning.classList.remove("alert-success");
 				warning.classList.add("alert-danger");
-				warning.textContent = "Your phrase has an invalid character.";
+				warning.textContent = "Your phrase has an invalid character!";
                 seedField.textContent = "";
             }
     }
