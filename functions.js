@@ -70,7 +70,7 @@ document.querySelector(".btn").onclick = () =>
         warning = document.querySelector(".warning");
         seedField = document.querySelector(".seed");
 
-        if(phrase.value == "")
+        if(phrase.value == 0)
             {
 				warning.classList.remove("alert-success");
 				warning.classList.add("alert-danger");
