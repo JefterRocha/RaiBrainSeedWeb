@@ -80,7 +80,6 @@ document.querySelector(".btn").onclick = () =>
 
         else if(MainFlow(phrase.value) !== false)
             {
-			warning.classList.remove("alert-success");
 			warning.classList.remove("alert-danger");
 			warning.classList.add("alert-success");
 			warning.textContent = "Your seed";
