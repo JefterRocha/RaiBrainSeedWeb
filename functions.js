@@ -70,27 +70,28 @@ document.querySelector(".btn").onclick = () =>
         warning = document.querySelector(".warning");
         seedField = document.querySelector(".seed");
 
-        if(phrase.value == 0)
-            {
-				warning.classList.remove("alert-success");
-				warning.classList.add("alert-danger");
-				warning.textContent = "Insert a phrase first";
-                seedField.textContent = "";
+	if(phrase.value == 0)
+		{
+			warning.classList.remove("alert-success");
+			warning.classList.add("alert-danger");
+			warning.textContent = "Insert a phrase first";
+                	seedField.textContent = "";
             }
 
         else if(MainFlow(phrase.value) !== false)
             {
-				warning.classList.remove("alert-success");
-				warning.classList.remove("alert-danger");
-				warning.classList.add("alert-success");
-				warning.textContent = "Your seed";
-				seedField.style.color = "#3c763d";
-                seedField.textContent = MainFlow(phrase.value);
+			warning.classList.remove("alert-success");
+			warning.classList.remove("alert-danger");
+			warning.classList.add("alert-success");
+			warning.textContent = "Your seed";
+			seedField.style.color = "#3c763d";
+                	seedField.textContent = MainFlow(phrase.value);
             }
         else
             {
-				warning.classList.add("alert-danger");
-				warning.textContent = "Your phrase has an invalid character";
-                seedField.textContent = "";
+		    	warning.classList.remove("alert-success");
+			warning.classList.add("alert-danger");
+			warning.textContent = "Your phrase has an invalid character";
+                	seedField.textContent = "";
             }
     }
