@@ -72,6 +72,7 @@ document.querySelector(".btn").onclick = () =>
 
         if(phrase.value == 0)
             {
+				warning.classList.remove("alert-info");
 				warning.classList.remove("alert-success");
 				warning.classList.add("alert-danger");
 				warning.textContent = "Insert a phrase first!";
@@ -80,6 +81,7 @@ document.querySelector(".btn").onclick = () =>
 
         else if(MainFlow(phrase.value) !== false)
             {
+				warning.classList.remove("alert-info");
 				warning.classList.remove("alert-danger");
 				warning.classList.add("alert-success");
 				warning.textContent = "Your seed!";
@@ -88,6 +90,7 @@ document.querySelector(".btn").onclick = () =>
             }
         else
             {
+				warning.classList.remove("alert-info");
 				warning.classList.remove("alert-success");
 				warning.classList.add("alert-danger");
 				warning.textContent = "Your phrase has an invalid character!";
