@@ -54,15 +54,9 @@ body
 	{
 		color: #333;
 		text-decoration: none;
-		background-color: #e6e6e6;
+		background-color: #a3a3a3;
 		border-color: #8c8c8c;
 	}
-	
-/*.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
-	{
-		outline: 5px auto -webkit-focus-ring-color;
-		outline-offset: -2px;
-	}*/
 
 .alert-info
 	{
