@@ -39,7 +39,8 @@ body
 .btn
 	{
 		color: #333;
-		background-color: #fff;
+		background-color: rgb(255, 255, 255);
+		transition:  background-color ease-in-out .30s;
 		padding: 6px 12px;
 		line-height: 1.42857143;
 		cursor: pointer;
@@ -55,16 +56,25 @@ body
 		color: #333;
 		text-decoration: none;
 		background-color: #e6e6e6;
+		transition:  background-color ease-in-out .30s;
 		border-color: #8c8c8c;
 	}
-.btn:active
+/*.btn:active
 	{
 		color: #333;
 		text-decoration: none;
 		background-color: #ffffff;
+		transition:  background-color ease-in-out .15s;
+		border-color: #8c8c8c;
+	}*/
+.btn:focus
+	{
+		color: #333;
+		text-decoration: none;
+		background-color: #e6e6e6;
+		transition:  background-color ease-in-out .15s;
 		border-color: #8c8c8c;
 	}
-
 .alert-info
 	{
         display: table;
