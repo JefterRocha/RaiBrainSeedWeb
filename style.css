@@ -95,6 +95,16 @@ body
 		outline-offset: -2px;
 	}
 
+.alert-info
+	{
+		color: #31708f;
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+		padding: 15px;
+		margin-bottom: 20px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
 .alert-danger
 	{
 		display: table;
@@ -116,6 +126,7 @@ body
 		border: 1px solid transparent;
 		border-radius: 4px;
 	}
+
 .seed-field
 	{
 		display: table;
