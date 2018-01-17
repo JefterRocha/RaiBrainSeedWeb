@@ -74,7 +74,7 @@ document.querySelector(".btn").onclick = () =>
             {
 				warning.classList.remove("alert-success");
 				warning.classList.add("alert-danger");
-				warning.textContent = "Insert a phrase first";
+				warning.textContent = "Insert a phrase first.";
                 seedField.textContent = "";
             }
 
