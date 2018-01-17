@@ -68,7 +68,7 @@ document.querySelector(".btn").onclick = () =>
     {
         phrase = document.querySelector(".phrase");
         warning = document.querySelector(".warning");
-        seedField = document.querySelector(".seed");
+        seedField = document.querySelector(".seed-field > span");
 
         if(phrase.value == 0)
             {
