@@ -59,19 +59,20 @@ body
 		transition:  background-color ease-in-out .30s;
 		border-color: #8c8c8c;
 	}
-/*.btn:active
-	{
-		color: #333;
-		text-decoration: none;
-		background-color: #ffffff;
-		transition:  background-color ease-in-out .15s;
-		border-color: #8c8c8c;
-	}*/
+
 .btn:focus
 	{
 		color: #333;
 		text-decoration: none;
 		background-color: #e6e6e6;
+		transition:  background-color ease-in-out .15s;
+		border-color: #8c8c8c;
+	}
+.btn:active
+	{
+		color: #333;
+		text-decoration: none;
+		background-color: rgba(119, 136, 153, 0.459);
 		transition:  background-color ease-in-out .15s;
 		border-color: #8c8c8c;
 	}
