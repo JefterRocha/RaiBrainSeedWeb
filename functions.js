@@ -4,7 +4,7 @@ const AsciiParser = (string) =>
 	{
 		for(let c of string)
 			{
-				if(ASCIICHARS.indexOf(c) == -1)
+				if(!ASCIICHARS.match(c))
 					{
 						return false;
 					}
