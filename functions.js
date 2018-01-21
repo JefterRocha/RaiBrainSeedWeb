@@ -2,15 +2,16 @@ const ASCIICHARS = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
 const AsciiParser = (string) =>
 	{
-		for(let c in string)
+		for(let c of string)
 			{
-				if(ASCIICHARS.indexOf(string[c]) == -1)
+				if(ASCIICHARS.indexOf(c) == -1)
 					{
 						return false;
 					}
 			}
 		return true;
 	}
+
 const AsciiList = (string) =>
 	{
 		s = string.replace(/\s/g, "");
@@ -18,12 +19,12 @@ const AsciiList = (string) =>
 		l.sort();
 		return l;
 	}
+
 const MakeHexDic = (l) =>
 	{
 		d = {};
 		for(let i in l)
 			{
-				//d[l[i]] = i[2].charCodeAt(i).toString(16).toUpperCase();
 				d[l[i]] = (i%16).toString(16).toUpperCase();
 			}
 		return d;
@@ -36,12 +37,8 @@ const MakeSeed = (s, d) =>
 		seed = [];
 		for(let c in l)
 			{
-				//seed.push(Object.keys(d)[c]);
 				seed.push(d[l[c]]);
 			}
-
-		//Object.entries(obj).reduce((p,n) => p.concat(n), []);
-		//seed = Object.values(d);
 
 		seed = seed.join("");
 		while(seed.length < 64)
@@ -63,7 +60,7 @@ const MainFlow = (s) =>
 		return seed;
 	}
 
-//-------------------------------------------------------------------
+/*-------------------------------------------------------------------*/
 document.querySelector(".btn").onclick = () =>
     {
         phrase = document.querySelector(".phrase");
